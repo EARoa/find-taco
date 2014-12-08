@@ -15,19 +15,14 @@
 
 
   <nav>
-  <% if user_signed_in? %>
-    Hi <%= current_user.email %>
-    <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-  <% else %>
-    <%= link_to "Sign Up", sign_up_path %>
-  <% end %>
+
   <%= link_to "Home", root_path %>
   <%= link_to "Taco Finder", :tacos_search %>
 
   <%= form_tag tacos_results_path, method: :post, id: "hangry" do %>
   <%= hidden_field_tag :longitude, "", placeholder: "longitude", id: "longitude" %>
   <%= hidden_field_tag :latitude, "", placeholder: "latitude", id: "latitude" %>
-    <%= submit_tag "Find tacos near me NOAW I I HANGRY" %>
+    <%= submit_tag "Find tacos near me NAOO I IS HANGRY" %>
   <% end %>
 </nav>
 

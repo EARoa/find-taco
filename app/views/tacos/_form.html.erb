@@ -2,3 +2,9 @@
 <%= text_field_tag :location, params["location"], placeholder: "location" %>
 <%= submit_tag "Search" %>
 <% end %>
+
+
+<%= form_tag tacos_results_path, method: :post do %>
+<%= text_field_tag :query, params["Place"], placeholder: "Place" %>
+<%= submit_tag "Search" %>
+<% end %>

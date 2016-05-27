@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Reviewy</title>
+  <title>TacoFinder</title>
   <%= stylesheet_link_tag    'application', media: 'all'%>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
@@ -21,7 +21,7 @@
   <%= form_tag tacos_results_path, method: :post, id: "hangry" do %>
   <%= hidden_field_tag :longitude, "", placeholder: "longitude", id: "longitude" %>
   <%= hidden_field_tag :latitude, "", placeholder: "latitude", id: "latitude" %>
-    <%= submit_tag "Find tacos near me NAOO I IS HANGRY" %>
+    <%= submit_tag "Find Tacos Near Me" %>
   <% end %>
 </nav>
 
